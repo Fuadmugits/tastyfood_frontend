@@ -1,0 +1,238 @@
+/* ============================
+   CONTACT FORM
+   ============================ */
+.kontak-form-section {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.kontak-form__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.kontak-form__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.kontak-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.kontak-form__group {
+  margin-bottom: 1rem;
+}
+
+.kontak-form__input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.925rem;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #fafafa;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.kontak-form__input:focus {
+  outline: none;
+  border-color: #f5a623;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.1);
+}
+
+.kontak-form__textarea {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.925rem;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #fafafa;
+  resize: vertical;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.kontak-form__textarea:focus {
+  outline: none;
+  border-color: #f5a623;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.1);
+}
+
+.kontak-form__submit {
+  width: 100%;
+  padding: 1.15rem 2rem;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.925rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.kontak-form__submit:hover {
+  background: #f5a623;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 166, 35, 0.3);
+}
+
+.kontak-form__submit--loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.kontak-form__status {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.925rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 4px;
+  animation: fadeIn 0.3s ease;
+}
+
+.kontak-form__status--success {
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.kontak-form__status--error {
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+/* ============================
+   CONTACT INFO
+   ============================ */
+.kontak-info {
+  padding: 4rem 0 6rem;
+  background: #ffffff;
+}
+
+.kontak-info__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.kontak-info__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.kontak-info__card {
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.kontak-info__card:hover {
+  transform: translateY(-5px);
+}
+
+.kontak-info__icon {
+  width: 70px;
+  height: 70px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.kontak-info__card:hover .kontak-info__icon {
+  background: #f5a623;
+  transform: scale(1.1);
+}
+
+.kontak-info__label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.kontak-info__value {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* ============================
+   MAP
+   ============================ */
+.kontak-map {
+  background: #e5e5e5;
+  line-height: 0;
+}
+
+.kontak-map iframe {
+  width: 100%;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.kontak-map iframe:hover {
+  filter: grayscale(0%);
+}
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================
+   SCROLL REVEAL
+   ============================ */
+.kontak-page .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.kontak-page .reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+  .kontak-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kontak-info__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,129 @@
+.berita-featured {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.berita-featured__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.berita-featured__image {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.berita-featured__image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.berita-featured__image:hover img {
+  transform: scale(1.03);
+}
+
+.berita-featured__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.berita-featured__text {
+  color: #555;
+  font-size: 0.925rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.berita-featured__btn {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.825rem;
+  letter-spacing: 2px;
+  transition: all 0.35s ease;
+  margin-top: 0.5rem;
+}
+
+.berita-featured__btn:hover {
+  background: #f5a623;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 166, 35, 0.3);
+}
+
+.berita-list {
+  padding: 4rem 0 6rem;
+  background: #f9f9f9;
+}
+
+.berita-list__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.berita-list__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.berita-list__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.berita-page .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.berita-page .reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .berita-featured__container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .berita-list__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .berita-featured__image img {
+    height: 280px;
+  }
+
+  .berita-featured__title {
+    font-size: 1.35rem;
+  }
+
+  .berita-list__grid {
+    grid-template-columns: 1fr;
+  }
+}

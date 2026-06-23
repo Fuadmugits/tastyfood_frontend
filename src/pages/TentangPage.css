@@ -1,0 +1,196 @@
+/* ============================
+   ABOUT SECTION
+   ============================ */
+.tentang-about {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.tentang-about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.tentang-about__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.tentang-about__text {
+  color: #555;
+  font-size: 0.925rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.tentang-about__text--bold {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.tentang-about__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tentang-about__img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.tentang-about__img:hover {
+  transform: scale(1.03);
+}
+
+/* ============================
+   VISI SECTION
+   ============================ */
+.tentang-visi {
+  padding: 6rem 0;
+  background: #f9f9f9;
+}
+
+.tentang-visi__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.tentang-visi__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tentang-visi__img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.tentang-visi__img:hover {
+  transform: scale(1.03);
+}
+
+.tentang-visi__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.tentang-visi__text {
+  color: #555;
+  font-size: 0.925rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* ============================
+   MISI SECTION
+   ============================ */
+.tentang-misi {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.tentang-misi__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.tentang-misi__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.tentang-misi__text {
+  color: #555;
+  font-size: 0.925rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.tentang-misi__img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.tentang-misi__img:hover {
+  transform: scale(1.03);
+}
+
+/* ============================
+   SCROLL REVEAL
+   ============================ */
+.tentang-page .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.tentang-page .reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 992px) {
+  .tentang-about__container,
+  .tentang-visi__container,
+  .tentang-misi__container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .tentang-visi__container {
+    direction: ltr;
+  }
+}
+
+@media (max-width: 576px) {
+  .tentang-about__images,
+  .tentang-visi__images {
+    grid-template-columns: 1fr;
+  }
+
+  .tentang-about__img,
+  .tentang-visi__img {
+    height: 220px;
+  }
+}
